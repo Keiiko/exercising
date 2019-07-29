@@ -3,6 +3,9 @@ package net.yetamine.playground;
 public class constructor {
     int value;
 
+    //sdilena
+    static int val2;
+
     public int getValue() {
         return value;
     }
@@ -16,7 +19,7 @@ public class constructor {
     }
 
     public int incrementAndGet() {
-        return ++value;
+        return ++/*this.*/value;
     }
 
     public static void main(String[] args){
