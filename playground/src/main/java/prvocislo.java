@@ -8,11 +8,11 @@ public class prvocislo {
         int cislo = in.nextInt();
         //int cislo = Integer.parseInt(System.console().readLine());
         System.out.println("Je "+cislo+" prvocislo?");
-        System.out.println(prvocislo(cislo)?"Ano":"Ne");
+        System.out.println(jePrvocislo(cislo)?"Ano":"Ne");
     }
 
-    public static boolean prvocislo(int i) {
-        if (i < 2) {
+    public static boolean jePrvocislo(int i) {
+        if (i < 3) {
             if (i==2) {
                 //if i je 2 je prvo
                 return true;
