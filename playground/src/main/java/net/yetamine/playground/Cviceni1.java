@@ -1,7 +1,6 @@
 package net.yetamine.playground;
 
 //testovani
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -13,13 +12,13 @@ public class Cviceni1 {
         vypisPrvocislaAzPo(cislo);
     }
 
-    public static void vypisPrvocislaAzPo(int cislo) {
+    private static void vypisPrvocislaAzPo(int cislo) {
         // TODO vypis konkretni cisla,
         int[] t = seznamPrvocisel(cislo);
         System.out.print(Arrays.toString(t));
     }
 
-    public static int[] seznamPrvocisel(int maxIn) {
+    private static int[] seznamPrvocisel(int maxIn) {
         int prvocisla=0;
         boolean[] t = new boolean[maxIn + 1];
 //            t[0]=true;
