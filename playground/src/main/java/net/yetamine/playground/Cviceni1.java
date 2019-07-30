@@ -5,7 +5,7 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class cviceni1 {
+public class Cviceni1 {
     public static void main(String[] args){
         System.out.print("Test na prvocisla, zadej koncove cislo: ");
         Scanner in = new Scanner(System.in);

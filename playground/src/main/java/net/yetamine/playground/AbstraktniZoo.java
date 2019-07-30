@@ -6,7 +6,10 @@ public class AbstraktniZoo {
                 new Hafak(),
                 new Cici()
         };
-        for(Animal zvire : zoo){
+        for(final Animal zvire : zoo){
+            if(zvire instanceof Pojmenovano) {
+                System.out.println(((Pojmenovano) zvire).jmeno());
+            }
             zvire.speak();
         }
     }

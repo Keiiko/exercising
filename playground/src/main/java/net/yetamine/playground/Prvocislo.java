@@ -1,7 +1,7 @@
 package net.yetamine.playground;
 import java.util.Scanner;
 
-public class prvocislo {
+public class Prvocislo {
     public static void main(String[] args) {
         System.out.print("Test na prvocisla, zadej cislo: ");
         Scanner in = new Scanner(System.in);
