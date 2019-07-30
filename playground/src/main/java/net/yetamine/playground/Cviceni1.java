@@ -7,9 +7,12 @@ import java.util.Scanner;
 public class Cviceni1 {
     public static void main(String[] args){
         System.out.print("Test na prvocisla, zadej koncove cislo: ");
-        Scanner in = new Scanner(System.in);
-        int cislo = in.nextInt();
-        vypisPrvocislaAzPo(cislo);
+        try (Scanner in = new Scanner(System.in)) {
+            int cislo = in.nextInt();
+            vypisPrvocislaAzPo(cislo);
+        } finally {
+            System.out.println(" Done");
+        }
     }
 
     private static void vypisPrvocislaAzPo(int cislo) {
