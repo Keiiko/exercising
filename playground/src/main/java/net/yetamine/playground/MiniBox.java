@@ -42,7 +42,7 @@ public final class MiniBox<T> {
 
     public void addTo(Collection<? super T> collection) {
         if (data != null) {
-            collection.add(data)
+            collection.add(data);
         }
     }
 }
