@@ -1,5 +1,8 @@
 package net.yetamine.playground;
 
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 import java.util.Objects;
 
 public final class MiniBox<T> {
@@ -35,5 +38,11 @@ public final class MiniBox<T> {
         return "MiniBox{" +
                 "data=" + data +
                 '}';
+    }
+
+    public void addTo(Collection<? super T> collection) {
+        if (data != null) {
+            collection.add(data)
+        }
     }
 }
